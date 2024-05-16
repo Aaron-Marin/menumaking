@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Online Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+        :root {
+            --dark-wine: #641E16; /* Dark wine color */
+            --green: #27ae60;
+            --black: #212F3D; /* Dark blue, almost black for a richer look */
+            --white: #fff;
+            --bg-color: #f4e3e3; /* Soft pink background that complements dark wine */
+            --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+            --border: 1px solid #dcdde1;
+        }
+
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+
+        body {
+            background: linear-gradient(to right, #bdc3c7, #2c3e50); /* Subtle gradient from light grey to dark blue */
+            color: var(--black);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background: var(--white);
+            padding: 4rem;
+            border-radius: 15px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            width: 90%;
+            max-width: 700px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: scale(1.03);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: var(--dark-wine);
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.6rem;
+            line-height: 2;
+            color: var(--black);
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            background-color: var(--dark-wine);
+            color: var(--white);
+            padding: 15px 30px;
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+        }
+
+        .btn:hover {
+            background-color: var(--black);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Welcome to Our Online Store!</h1>
+    <p>This platform provides a comprehensive suite of tools to help you manage your inventory, track sales in real-time, and connect with customers. Our user-friendly admin panel allows you to add, edit, and delete products with ease. Stay on top of your business with our streamlined and intuitive interface designed for businesses of all sizes.</p>
+    <a href="admin_page.php" class="btn">Enter Admin Panel</a>
+</div>
+
+</body>
+</html>
